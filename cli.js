@@ -83,7 +83,7 @@ if (program.bookid && existsSync(SESSION_PATH)) {
     console.log(`\x1b[1m\x1b[31m
         Something is missing. 
         Make sure to enter -b <bookid>, -e <email> and -p <email-password>.
-        Example: \x1b[0m $ node lib/cli.js -b "121212121212" -e "jen@example.com" -p "mypassword"
+        Example: \x1b[0m $ obooks -b "121212121212" -e "jen@example.com" -p "mypassword"
         `, '\x1b[0m')
     return
 }

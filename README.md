@@ -16,13 +16,13 @@ _This package is exclusively intended for personal use. Its purpose is to comple
 
 You need to hold an active account in [O'Reilly](https://www.oreilly.com/) to be able to download books.
 
-    node cli.js -b "9781260440249" -e "your@email.es" -p "yourEmailPassword"
+    $ obooks -b "9781260440249" -e "your@email.es" -p "yourEmailPassword"
 
 Your eBooks will be stored in a `books` folder within the cloned project.
 
 After the first successful login/book download through **obooks**, a `session.json` file containing auth cookies will be written in the root of the project. Any future downloads will not require email or password in the command.
 
-	node cli.js -b "9781260440249"
+	$ obooks -b "9781260440249"
 
 
 
@@ -37,7 +37,7 @@ Depending on the security of your gmail account you might run one of the followi
 	Easy, in that case you just need to provide the O'Reilly book identifier, the gmail address you use to sign in to O'Reilly and the password to your email address.
 
 	Example:
-	`node cli.js -b "9781260440249" -e "your@email.es" -p "yourEmailPassword"`
+	`$ obooks -b "9781260440249" -e "your@email.es" -p "yourEmailPassword"`
 
 -  _**I have two factor authentication enabled in my gmail account**_
 
@@ -45,7 +45,7 @@ Depending on the security of your gmail account you might run one of the followi
 	As a workaround, **obooks** provides an extra `-c <backupcode>` flag which takes a Gmail Backup code as an argument. Information on how to get a set of backup codes can be found [here](https://support.google.com/accounts/answer/1187538?co=GENIE.Platform%3DDesktop&hl=en&oco=0).
 
 	Example:
-	`node cli.js -b "9781260440249" -e "your@email.es" -p "yourEmailPassword" -c "123 123"`
+	`$ obooks -b "9781260440249" -e "your@email.es" -p "yourEmailPassword" -c "123 123"`
 
 ## **CLI flags explained**
 
