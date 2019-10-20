@@ -1,6 +1,6 @@
 # O'BOOKS  :books::sparkles:
 
-CLI to download and generate eBooks from [O'Reilly](https://www.oreilly.com/).
+CLI to download and generate books from [O'Reilly](https://www.oreilly.com/) | Safaribooks.
 
 .
 .
@@ -14,11 +14,11 @@ _This package is exclusively intended for personal use. Its purpose is to comple
 
 # Usage
 
-You need to hold an active account in [O'Reilly](https://www.oreilly.com/) to be able to download books.
+You need to hold an active account in [O'Reilly](https://www.oreilly.com/) | Safaribooks to be able to download books.
 
     $ obooks -b "9781260440249" -e "your@email.es" -p "yourEmailPassword"
 
-Your eBooks will be stored in a `books` folder within the cloned project.
+The downloaded books will be stored in a folder called `obooks` in your home directory.
 
 After the first successful login/book download through **obooks**, a `session.json` file containing auth cookies will be written in the root of the project. Any future downloads will not require email or password in the command.
 
