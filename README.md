@@ -25,6 +25,8 @@ After the first successful login/book download through **obooks**, a `session.js
 	$ obooks -b "9781260440249"
 
 
+ps: For readability, the example commands assume the package has been installed globally (`$ npm install -g obooks`). For local installs, just replace the `obooks` keyword for `./cli` in the commands and execute them from the root of the project (example: `./cli.js -b "9781260440249" -e "your@email.es" -p "yourEmailPassword"`).
+
 
 ## Authentication
 

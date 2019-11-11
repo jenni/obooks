@@ -3,14 +3,12 @@
   "version": "0.2.0",
   "description": "Download and compose .epub books from OReilly.",
   "main": "cli.js",
-  "bin": {
-    "obooks": "./cli.js"
-  },
+  "bin": "./cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jen Varela Lijó",
   "license": "MIT",
   "dependencies": {
     "commander": "^3.0.2",
