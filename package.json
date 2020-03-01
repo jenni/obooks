@@ -1,6 +1,6 @@
 {
   "name": "obooks",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Download and compose .epub books from OReilly.",
   "main": "cli.js",
   "bin": "./cli.js",
