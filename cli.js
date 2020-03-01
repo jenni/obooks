@@ -4,7 +4,7 @@ const program = require('commander')
 const { existsSync } = require('fs')
 
 const OBook = require('./lib/OBook')
-const { getCachedCookies, GoogleAuthentication } = require('./lib/authentication')
+const { getCachedCookies, GoogleAuthentication } = require('./lib/Authentication')
 
 const SESSION_PATH = './session.json'
 
