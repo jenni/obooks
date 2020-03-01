@@ -55,7 +55,6 @@ program
 
 const sessionCached = (program.bookid && existsSync(SESSION_PATH))
 const sessionAsArg = (program.bookid && program.cookie)
-const sessionInexistent = (program.bookid && program.email && program.password)
 
 const download = async ({ session, bookid, email, password }) => {
 
@@ -85,17 +84,10 @@ if (sessionCached) {
 
 } else {
 
-    if (sessionInexistent) {
-        return download({
-            bookid: program.bookid,
-            email: program.email,
-            password: program.password
-        })
-    }
     console.log(`\x1b[1m\x1b[31m
         Something is missing. 
-        Make sure to enter -b <bookid>, -e <email> and -p <email-password>.
-        Example: \x1b[0m $ obooks -b "121212121212" -e "jen@example.com" -p "mypassword"
+        Make sure to enter -b <bookid> and -c <cookie>.
+        Example: \x1b[0m $ obooks -b "121212121212" -c "LONG COOKIE STRING HERE"
         `, '\x1b[0m')
 
     process.exit(1)
