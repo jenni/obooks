@@ -4,7 +4,7 @@ const program = require('commander')
 const { existsSync } = require('fs')
 
 const OBook = require('./lib/OBook')
-const { getCachedCookies, GoogleAuthentication } = require('./lib/Authentication')
+const { getCachedCookies } = require('./lib/Authentication')
 const { write } = require('./lib/utils')
 
 const SESSION_PATH = './session.json'
@@ -47,8 +47,6 @@ console.log('\x1b[1m\x1b[33m', `
 program
     .version("1.0.0")
     .option('-b, --bookid <bookid>','[required] OReilly | SafariBooksOnline book identifier')
-    .option('-e, --email <email>','OReilly | SafariBooksOnline account email')
-    .option('-p, --password <password>','Gmail password')
     .option('-c, --cookie <cookie>','Session cookies')
     .parse(process.argv)
 
@@ -56,16 +54,9 @@ program
 const sessionCached = (program.bookid && existsSync(SESSION_PATH))
 const sessionAsArg = (program.bookid && program.cookie)
 
-const download = async ({ session, bookid, email, password }) => {
+const download = async ({ session, bookid }) => {
 
-    let cookie
-
-    if (session != null) {
-        cookie = getCachedCookies(session)
-    } else {
-        const goAuth = new GoogleAuthentication(email, password)
-        cookie = await goAuth.authenticate()
-    }
+    const cookie = getCachedCookies(session)
 
     const ohBooks = new OBook(cookie, bookid)
     return ohBooks.create()
