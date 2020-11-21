@@ -11,6 +11,7 @@
   "author": "Jen Varela Lijó",
   "license": "MIT",
   "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
     "commander": "^3.0.2",
     "epub-gen": "^0.1.0",
     "image-downloader": "^3.5.0",
