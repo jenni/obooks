@@ -1,7 +1,7 @@
 {
     "name": "obooks",
     "version": "0.2.3",
-    "description": "Download and compose .epub books from OReilly.",
+    "description": "Download .epub books from OReilly.",
     "main": "cli.js",
     "bin": "./cli.js",
     "scripts": {
@@ -16,5 +16,8 @@
         "image-downloader": "^3.5.0",
         "request": "^2.88.0",
         "request-promise": "^4.2.4"
+    },
+    "devDependencies": {
+        "prettier": "2.2.0"
     }
 }
