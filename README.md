@@ -19,7 +19,7 @@ You need to hold an active account in [O'Reilly](https://www.oreilly.com/) | Saf
 
   
 
-The downloaded books will be stored in a folder called `obooks` **in your home directory** (~/obooks).
+The downloaded books will be stored in the folder `obooks/books` inside the project.
 
 
 After the first successful login/book download through **obooks**, a `session.json` file containing auth cookies will be written in the root of the project. Any future downloads will not require passing the cookies to the command.
