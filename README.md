@@ -13,13 +13,23 @@ _This package is exclusively intended for personal use. Its purpose is to comple
 
 You need to hold an active account in [O'Reilly](https://www.oreilly.com/) | Safaribooks to be able to download books.
 
+## DOCKER
+
+```
+$ docker pull jennyfive/obooks
+$ docker run -it --rm -v "$(pwd)/obooks/:/usr/app/books/" obooks -b "<BOOK ID>" -c "<COOKIES>"
+```
+
+The book will be available in the new `obooks` folder in the current directory.
+
+## CLI
   
 
 	$ ./cli.js -b "<BOOKID>" -c "<OREILLY_COOKIE>"
 
   
 
-The downloaded books will be stored in the folder `obooks/books` inside the project.
+The downloaded books will be stored in the folder `obooks/books` inside the cloned project.
 
 
 After the first successful login/book download through **obooks**, a `session.json` file containing auth cookies will be written in the root of the project. Any future downloads will not require passing the cookies to the command.
