@@ -17,7 +17,7 @@ You need to hold an active account in [O'Reilly](https://www.oreilly.com/) | Saf
 
 ```
 $ docker pull jennyfive/obooks
-$ docker run -it --rm -v "$(pwd)/obooks/:/usr/app/books/" obooks -b "<BOOK ID>" -c "<COOKIES>"
+$ docker run -it --rm -v "$(pwd)/obooks/:/usr/app/books/" jennyfive/obooks -b "<BOOK ID>" -c "<COOKIES>"
 ```
 
 The book will be available in the new `obooks` folder in the current directory.
