@@ -45,5 +45,5 @@ test(`Should return undefined cover filepath`, async () => {
 
     expect(result1).toBe(undefined)
     expect(result2).toBe(undefined)
-    expect(result3).toBe('x')
+    expect(result3).toBe(undefined)
 })
