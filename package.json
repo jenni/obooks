@@ -5,7 +5,7 @@
   "main": "cli.js",
   "bin": "./cli.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "Jen Varela Lijó",
@@ -17,5 +17,9 @@
     "image-downloader": "^3.5.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.4"
+  },
+  "devDependencies": {
+    "jest": "^27.1.0",
+    "jest-cli": "^27.1.0"
   }
 }
