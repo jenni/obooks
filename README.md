@@ -43,9 +43,14 @@ After the first successful login/book download through **obooks**, a `session.js
 The first time you're using obooks, you'll need to pass your logged in cookies in the command. Check the chrome developer tools while logged in to O'Reilly, you'll see a 'cookie' header sent in the 'Request Headers', this is the long string you should pass in in the **obooks** cookie flag `-c "<cookie>`:
 
 
-`$ ./cli.js -b "9781788623872" -c "LONG STRING OF COOKIES HERE"`
+`$ ./cli.js -b "9781492077992" -c "LONG STRING OF COOKIES HERE"`
 
-  
+###  **Windows Notes**
+
+In some cases an error will be triggered in a Windows enviroment, to solve run the cli under *nodejs* 
+
+`$ node cli.js  -b "9781492077992" -c "LONG  STRING COOKIE HERE"`
+
 ## **CLI flags explained**
 
 
