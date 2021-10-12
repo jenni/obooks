@@ -45,10 +45,7 @@ The first time you're using obooks, you'll need to pass your logged in cookies i
 
 `$ ./cli.js -b "9781788623872" -c "LONG STRING OF COOKIES HERE"`
 
-If you're using Windows and get the following error executing the cli command, try running it under *nodejs*:
-
-![Windows Script Host 10_8_2021 4_39_33 AM](https://user-images.githubusercontent.com/42723768/136499476-0069416b-176e-4ee4-8a66-22677c9440d4.png)
-
+note: if using Windows, run it under *nodejs*:
 
 `$ node cli.js  -b "9781492077992" -c "LONG  STRING OF COOKIES HERE"`
   
