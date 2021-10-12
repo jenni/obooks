@@ -45,6 +45,9 @@ The first time you're using obooks, you'll need to pass your logged in cookies i
 
 `$ ./cli.js -b "9781788623872" -c "LONG STRING OF COOKIES HERE"`
 
+note: if using Windows, run it under *nodejs*:
+
+`$ node cli.js  -b "9781492077992" -c "LONG  STRING OF COOKIES HERE"`
   
 ## **CLI flags explained**
 
